@@ -57,13 +57,7 @@
                         <option value="0">Unavailable</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label for="Condition">Condition</label>
-                    <select name="Condition" class="form-control">
-                        <option value="1">new</option>
-                        <option value="0">used</option>
-                    </select>
-                </div>
+                
                 <button type="submit" class="btn btn-primary">Submit</button>
 
 

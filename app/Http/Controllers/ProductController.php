@@ -177,7 +177,8 @@ class ProductController extends Controller
             'price' => 'required',
             'image_prod' => 'image|mimes:jpeg,bmp,png,svg,webp,jpg',
             'image_prods.*' => 'image|mimes:jpeg,bmp,png,svg,webp,jpg',
-            'status' => 'required'
+            'status' => 'required',
+            'condition' => 'required' 
     ]);
         try {
             if($request->file('image_prod')) {
