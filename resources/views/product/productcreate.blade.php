@@ -76,7 +76,7 @@
                 </div>
                 <div class="form-group">
                     <label for="Condition">Condition</label>
-                    <select name="Condition" class="form-control">
+                    <select name="condition" class="form-control">
                         <option value="1">new</option>
                         <option value="0">used</option>
                     </select>

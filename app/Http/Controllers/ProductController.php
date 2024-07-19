@@ -76,6 +76,7 @@ class ProductController extends Controller
             }
 
             $input = Product::create([
+                'user_id' => auth()->id(),
                 'title' => trim($request->input('title')),
                 'price' => trim($request->input('price')),
                 'sale_price' => trim($request->input('sale_price')),
@@ -84,8 +85,7 @@ class ProductController extends Controller
                 'image_prod' =>$filename,
                 'category_id'=>$request->input('category_id'),
                 'status' => $request->input('status'),
-                'condition' => $request->input('condition'),
-
+                'condition' => $request->input('condition'), 
             ]);
                 if ($request->file('image_prods')) {
 
